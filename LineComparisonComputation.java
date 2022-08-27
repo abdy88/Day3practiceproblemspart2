@@ -15,6 +15,7 @@ public class LineComparisonComputation {
 	System.out.println("Enter coordinates of second line");
 	linelength2=calcLinelength();
 	checkEqualityOfTwoLines();
+	compareLines();
 
 	}
 	
@@ -66,15 +67,32 @@ public class LineComparisonComputation {
 		 	}
 			
  	 			
-   }
+   	}
    
-
+	 static void compareLines()
+		{
+			 if (linelength1==linelength2)
+     	  {
+     		  System.out.println("Two lines are equal");
+			
+     	  }
+			
+			 else if (linelength1 > linelength2)
+			 {
+				 
+				System.out.println("Linelength1 is greater than Linelength2");
+				 
+			 }
+			
+			 else
+			
+			 {
+				 System.out.println("Linelength2 is greater than Linelength1");
+				 
+			 }
+		}
 	
 	
 	
 	
-	
-	
-	
-	
-}
+	}
